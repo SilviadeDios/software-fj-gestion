@@ -1,0 +1,58 @@
+2026-11-06 23:16:22,653 | INFO     | ===== INICIO DE LA SIMULACIÓN =====
+2026-11-06 23:16:22,653 | INFO     | Cliente creado: id=1 nombre=Ana María Gómez
+2026-11-06 23:16:22,653 | INFO     | Operación 01 'Cliente válido' exitosa
+2026-11-06 23:16:22,653 | DEBUG    | Operación 01 finalizada
+2026-11-06 23:16:22,654 | ERROR    | Operación 02 'Cliente con correo inválido' falló: Correo inválido ('luis-correo')
+2026-11-06 23:16:22,654 | DEBUG    | Operación 02 finalizada
+2026-11-06 23:16:22,654 | ERROR    | Operación 03 'Cliente con parámetro faltante' falló: Faltan datos del cliente (email, telefono)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 03 finalizada
+2026-11-06 23:16:22,654 | INFO     | Cliente creado: id=4 nombre=Luis Pérez
+2026-11-06 23:16:22,654 | INFO     | Operación 04 'Segundo cliente válido' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 04 finalizada
+2026-11-06 23:16:22,654 | INFO     | Operación 05 'Sala válida' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 05 finalizada
+2026-11-06 23:16:22,654 | ERROR    | Operación 06 'Servicio con tarifa inválida' falló: Tarifa inválida (-100)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 06 finalizada
+2026-11-06 23:16:22,654 | INFO     | Operación 07 'Alquiler de equipo válido' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 07 finalizada
+2026-11-06 23:16:22,654 | INFO     | Operación 08 'Asesoría válida' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 08 finalizada
+2026-11-06 23:16:22,654 | ERROR    | Operación 09 'Reserva con duración fuera de rango (sala 20h)' falló: Duración inválida para la reserva (Duración de sala fuera de rango [1, 8] (20)) <- causa: Duración de sala fuera de rango [1, 8] (20)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 09 finalizada
+2026-11-06 23:16:22,654 | ERROR    | Operación 10 'Reserva con cliente inexistente' falló: Cliente inválido (None)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 10 finalizada
+2026-11-06 23:16:22,654 | INFO     | Servicio Portátil Pro disponible=False
+2026-11-06 23:16:22,654 | ERROR    | Operación 11 'Reserva de servicio no disponible' falló: Servicio no disponible (Portátil Pro)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 11 finalizada
+2026-11-06 23:16:22,654 | INFO     | Servicio Portátil Pro disponible=True
+2026-11-06 23:16:22,654 | INFO     | Reserva creada: id=12 cliente=Ana María Gómez servicio=Sala Innovación duración=3
+2026-11-06 23:16:22,654 | INFO     | Operación 12 'Reserva de sala exitosa' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 12 finalizada
+2026-11-06 23:16:22,654 | INFO     | Reserva creada: id=13 cliente=Luis Pérez servicio=Arquitectura de software duración=2
+2026-11-06 23:16:22,654 | INFO     | Operación 13 'Reserva de asesoría exitosa' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 13 finalizada
+2026-11-06 23:16:22,654 | INFO     | Reserva creada: id=14 cliente=Ana María Gómez servicio=Portátil Pro duración=24
+2026-11-06 23:16:22,654 | INFO     | Operación 14 'Reserva de equipo exitosa' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 14 finalizada
+2026-11-06 23:16:22,654 | ERROR    | Fallo al procesar reserva 12: Solo se procesa una reserva confirmada (estado actual: PENDIENTE)
+2026-11-06 23:16:22,654 | DEBUG    | Fin de procesamiento de reserva 12 (estado=PENDIENTE)
+2026-11-06 23:16:22,654 | ERROR    | Operación 15 'Procesar reserva sin confirmar (error)' falló: No fue posible procesar la reserva (Solo se procesa una reserva confirmada (estado actual: PENDIENTE)) <- causa: Solo se procesa una reserva confirmada (estado actual: PENDIENTE)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 15 finalizada
+2026-11-06 23:16:22,654 | INFO     | Reserva 12 confirmada
+2026-11-06 23:16:22,654 | INFO     | Operación 16 'Confirmar reserva' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 16 finalizada
+2026-11-06 23:16:22,654 | INFO     | Reserva 12 procesada. Total=$178,500.00
+2026-11-06 23:16:22,654 | DEBUG    | Fin de procesamiento de reserva 12 (estado=PROCESADA)
+2026-11-06 23:16:22,654 | INFO     | Operación 17 'Procesar con IVA 19%' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 17 finalizada
+2026-11-06 23:16:22,654 | INFO     | Reserva 13 confirmada
+2026-11-06 23:16:22,654 | ERROR    | Fallo al procesar reserva 13: Impuesto o descuento fuera de rango [0, 1] (impuesto=0.19, descuento=1.5)
+2026-11-06 23:16:22,654 | DEBUG    | Fin de procesamiento de reserva 13 (estado=CONFIRMADA)
+2026-11-06 23:16:22,654 | ERROR    | Operación 18 'Procesar con descuento inválido (150%)' falló: No fue posible procesar la reserva (Impuesto o descuento fuera de rango [0, 1] (impuesto=0.19, descuento=1.5)) <- causa: Impuesto o descuento fuera de rango [0, 1] (impuesto=0.19, descuento=1.5)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 18 finalizada
+2026-11-06 23:16:22,654 | WARNING  | Reserva 14 cancelada
+2026-11-06 23:16:22,654 | ERROR    | Operación 19 'Cancelar reserva y reintentar cancelar' falló: No se puede cancelar (estado actual: CANCELADA)
+2026-11-06 23:16:22,654 | DEBUG    | Operación 19 finalizada
+2026-11-06 23:16:22,654 | INFO     | Operación 20 'Cotizaciones sobrecargadas de asesoría (2h)' exitosa
+2026-11-06 23:16:22,654 | DEBUG    | Operación 20 finalizada
+2026-11-06 23:16:22,654 | INFO     | ===== FIN DE LA SIMULACIÓN =====
