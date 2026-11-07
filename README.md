@@ -4,6 +4,8 @@ Proyecto de la **Fase 4 – Programación (213023)**. Aplicación orientada a ob
 en Python, **sin base de datos**: todo se maneja con objetos y listas, y solo se usan
 archivos para el registro de eventos y errores (`logs/software_fj.log`).
 
+## Requisitos
+Python 3.8 o superior. No requiere librerías externas.
 
 ## Ejecución
 ```bash
