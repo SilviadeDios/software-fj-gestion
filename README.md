@@ -34,5 +34,5 @@ Simula 20 operaciones (válidas e inválidas) y el programa nunca se detiene por
 - **Excepciones:** personalizadas, `try/except`, `try/except/else`, `try/except/finally` y encadenamiento (`raise ... from`).
 
 ## Autoras
-- Parte A (base: excepciones, logs, entidad, cliente, servicio abstracto): _nombre estudiante 1_
-- Parte B (servicios, reserva, simulación): _nombre estudiante 2_
+- Primera parte (base: excepciones, logs, entidad, cliente, servicio abstracto): Silvia de Dios Vera
+- Segunda parte (servicios, reserva, simulación): Karen Daniela Alsina
